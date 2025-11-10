@@ -179,7 +179,6 @@ class _AddEditCourseScreenState extends State<AddEditCourseScreen> {
                     initialTime: _endTime,
                   );
                   if (time != null) {
-                    // Add validation for end time
                     setState(() {
                       _endTime = time;
                     });

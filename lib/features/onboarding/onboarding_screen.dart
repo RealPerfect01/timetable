@@ -31,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
       ],
       onDone: () {
         // When done button is press
-        context.go('/signup');
+        context.go('/timetable');
       },
       showSkipButton: true,
       skip: const Text("Skip"),

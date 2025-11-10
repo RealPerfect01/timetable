@@ -1,32 +1,24 @@
-# Student Timetable App
+# Project Blueprint
 
 ## Overview
 
-This is a Flutter application that helps students manage their course schedules. It allows users to create, view, edit, and delete courses, as well as export their timetable to an Excel spreadsheet.
+This is a Flutter application designed to help students manage their course schedules. It allows them to view their timetable, add, edit, and delete courses, and see upcoming classes.
 
-### Features
+## Features
 
-* **Onboarding:** A simple and intuitive onboarding flow for new users.
-* **Timetable View:** A visually appealing and easy-to-read timetable that displays all of the user's courses.
-* **Course Management:** The ability to add, edit, and delete courses.
-* **Export to Excel:** The ability to export the timetable to an Excel spreadsheet.
+* **Onboarding:** A simple onboarding screen to welcome users.
+* **Timetable:** A screen to display the user's weekly course schedule.
+* **Course Management:** Users can add, edit, and delete their courses.
+* **Upcoming Classes:** A widget that displays the upcoming classes for the day.
+* **Notifications:** The application can schedule notifications for upcoming classes.
 
-### Tech Stack
+## Style and Design
 
-* **Flutter:** The UI toolkit used to build the application.
-* **Provider:** The state management solution used to manage the application's state.
-* **go_router:** The routing solution used to manage the application's navigation.
-* **syncfusion_flutter_xlsio:** The package used to create the Excel spreadsheet.
-* **open_file:** The package used to open the Excel spreadsheet.
+The application uses the Material Design 3 theme with a purple color scheme. It uses the `google_fonts` package for custom fonts and `provider` for state management.
 
-## Plan
+## Plan and Steps for Current Changes
 
-1.  **Create the project:** Create a new Flutter project and set up the basic project structure.
-2.  **Add dependencies:** Add the necessary dependencies to the `pubspec.yaml` file, including `provider`, `go_router`, `syncfusion_flutter_xlsio`, and `open_file`.
-3.  **Create the onboarding flow:** Create a simple and intuitive onboarding flow for new users.
-4.  **Create the timetable view:** Create a visually appealing and easy-to-read timetable that displays all of the user's courses.
-5.  **Create the course management system:** Create a course management system that allows users to add, edit, and delete courses.
-6.  **Implement the export to Excel feature:** Implement the export to Excel feature, which allows users to export their timetable to an Excel spreadsheet.
-7.  **Add navigation:** Add navigation to the application using `go_router`.
-8.  **Format the code:** Format the code using `dart format`.
-9.  **Create the `blueprint.md` file:** Create the `blueprint.md` file, which provides an overview of the application and its features.
+1.  **Fix data type mismatches:** Corrected all `argument_type_not_assignable` errors by ensuring that `DateTime` and `TimeOfDay` objects are used correctly throughout the application.
+2.  **Fix `extra_positional_arguments_could_be_named` error:** Corrected the number of positional arguments in `AndroidNotificationDetails`.
+3.  **Fix unused import:** Removed the unused `material.dart` import from `app_router.dart`.
+4.  **Update `widget_test.dart`:** Replaced the incomplete test with a simple smoke test.
